@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC용 레이아웃</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+        <style>
+            /* 초기화 */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style-type: none;  
+            }
+            .clear{
+                clear: both;
+            }
+            #wrapper{
+                width: 70%;
+                margin: 0 auto;
+                font-family: 'Noto Sans KR', sans-serif , '굴림';
+            }
+
+            /*-------- 헤더 스타일 --------*/
+            header>nav>ul{
+                font-size: 0;
+            }
+            header>nav>ul>li{      
+                font-size: 14pt;         
+                display: inline-block;                   
+                border: 1px solid black; 
+                border-right: none; 
+                padding: 3px 15px;
+            }
+            header>nav>ul>li:first-child{
+                border-radius: 15px 0 0 15px;
+            }
+            header>nav>ul>li:last-child{
+                border-right: 1px solid black;
+                border-radius: 0 15px 15px 0;
+            }
+            header>nav>ul>li:hover{
+                background-color: black;
+                color: white;
+                cursor: pointer;
+            }
+            header{
+                height: 200px;
+                position: relative;
+            }
+            header>.title{
+                position: absolute;
+                top: 30px;
+            }
+            header .menu_up{                
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            header .menu_up>ul>li{
+                font-size: 9pt;
+            }
+            header .menu_down{
+                position: absolute;
+                right: 0;
+                bottom: 0;                
+            }
+            /*-------- 헤더 스타일 끝--------*/
+
+            /*-------- 섹션 스타일 --------*/
+            section>article,aside,footer{
+                border: 1px solid black;
+                margin-top: 30px;
+                padding: 20px;
+            }
+            section{
+                width: 70%;
+                float: left;
+            }
+            /*-------- 섹션 스타일 끝 --------*/
+
+            /*-------- 사이드 스타일 --------*/
+            aside{
+                width: 24%;
+                height: 280px;
+                float: right;
+            }
+            aside>ul{
+                margin-bottom: 10px;
+            }
+            aside>ul.side_menu{
+                width: 100%;
+            }
+            aside ul.side_menu>li{
+                width: 48%;
+                display: inline-block;
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px 0;
+            }
+            aside ul.side_content>li{
+                width: 98%;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+            aside ul.side_content>li>img{
+                float: left;
+                padding-right: 10px;
+            }
+            aside ul.side_css>li{
+                width: 98%;
+                border: 1px solid black;
+                box-sizing: border-box;
+                padding: 5px;
+            }
+            aside ul.side_css>li>img{
+                float: left;
+                padding-right: 10px;
+            }
+          
+            aside>.div_side{position: relative;}
+            aside>.div_side>ul{position: absolute;top:0;left:0}
+            aside>.div_side>ul{display: none;width:100%}
+
+            aside>ul>li:hover {background-color: black;color:white;cursor: pointer;}
+            aside>ul>li:hover  ul{display: block;}
+            /*-------- 사이드 스타일 끝 --------*/
+            /*-------- 푸터 스타일 --------*/
+            footer{
+                text-align: center;
+            }
+            /*-------- 푸터 스타일 끝 --------*/
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="title">
+                    <h1>Rint Development</h1>
+                    <h2>HTML5 + CSS3 Basic</h2>
+                </div>
+                <nav class="menu_up">
+                    <ul>
+                        <li>Web</li>
+                        <li>Mobile</li>
+                        <li>Game</li>
+                        <li>Simulation</li>
+                        <li>Data</li>
+                    </ul>
+                </nav>
+                <nav class="menu_down">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>node.js</li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <article>
+                    <h3>Main Article</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna.                     
+                    </p>
+                </article>
+                <article>
+                    <h3>Main Article</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna.                     
+                    </p>
+                </article>
+                <article>
+                    <h3>Main Article</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna.                     
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <ul class="side_menu">
+                    <li>HTML</li><li>CSS</li>
+                </ul>
+                <div class="div_side">
+                <ul class="side_content">
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>HTML</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>HTML</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>HTML</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>HTML</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                </ul>
+                
+                
+                <ul class="side_css">
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>CSS</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>CSS</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>CSS</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                    <li>
+                        <img src="../연습/커피잔.png" width="50px" height="50px">
+                        <div>
+                            <p>CSS</p>
+                            <p>0000-00-00</p>
+                        </div>                        
+                    </li>
+                </ul>
+            </div>
+            </aside>
+            <div class="clear"></div>
+            <footer>
+                <h2>HTML5 + CSS3 Basic</h2>
+                <h3>Website Layout Basic</h3>
+            </footer>
+        </div>
+    </body>
+</html>
