@@ -58,7 +58,7 @@ header {
     width: 100%;
     height: 710px;
     background-color: darkolivegreen;
-    background: url("../반응형img/header2_2.jpg");
+    background: url("../디자인/반응형img/header2_2.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
