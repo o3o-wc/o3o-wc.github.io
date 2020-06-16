@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+a {
+    color: #707070;
+}
+a:visited {
+    color: #707070;
+}
+a:hover {
+    color: #40adf7;
+}
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+* {
+    font-family: MoeumT R;
+}
+/* nav부분 */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > a > h3 {
+    color: #383838;
+    float: left;
+    font-family: MoeumT R;
+    font-size: 2.5vw;
+}
+nav > a > h3 > b {
+    color: #3e98cc;
+}
+nav {
+    width: 100%;
+    height: 65px;
+    background-color: azure;
+}
+nav > #menu > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav > #menu > ul > li > a {
+    font-size: 1vw;
+}
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: none;
+}
+.button {
+    width: 25px;
+    height: 1px;
+    border: black 2px solid;
+    background-color: black;
+    margin: 7px 0;
+}
+/* nav부분 */
+/* header부분 */
+header {
+    width: 100%;
+    height: auto;
+}
+.space {
+    width: auto;
+    height: 60px;
+}
+.background {
+    width: 100%;
+    height: 710px;
+    background-color: darkolivegreen;
+    background: url("../반응형웹/반응형img//header2_2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.background > div > h1 {
+    color: #3e295b;
+    font-size: 6vw;
+    letter-spacing: 20px;
+    float: left;
+}
+.background > div > h3 {
+    color: #3e295b;
+    font-size: 2vw;
+    opacity: 0.8;
+    text-align: right;
+}
+/* header부분 */
+/* HPB부분*/
+.hpb_section {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+/* .hpb_section >div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.rtg {
+    width: 7em;
+    height: 7em;
+    border-radius: 20px;
+    background-color: #a08cae;
+    transform: rotate(45deg);
+    margin: 0 auto;
+}
+.test {
+    transform: rotate(-45deg);
+    font-size: 60pt;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bolder;
+}
+.content {
+    text-align: center;
+    color: #989797;
+    font-size: 11pt;
+}
+.hpb_section ul {
+    display: flex;
+    justify-content: space-around;
+}
+.cont {
+    width: 350px;
+}
+.rtg {
+    margin-top: 20px;
+}
+
+/* HPB부분*/
+/* IMG부분 */
+.img_section {
+    width: 100%;
+    height: 1240px;
+    background-color: #cecbdd;
+}
+/* img{display: block;margin: 30px 0;} */
+/* .img{display:flex;flex-wrap: wrap;cursor: pointer;justify-content: center;}
+.img1{width: 305px;height: 780px;margin: 60px 35px;}
+.img2{width: 305px;height: 920px;} */
+
+.imgwrap {
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    width: 305px;
+    height: 260px;
+    background-color: black;
+    margin: 3px 10px;
+}
+.img:nth-child(1) {
+    background: url(../반응형웹/반응형img//포트폴리오1.png);
+    background-size: contain;
+}
+.img:nth-child(2) {
+    background: url(../반응형웹/반응형img//포트폴리오4.png);
+    background-size: contain;
+    height: 365px;
+}
+.img:nth-child(3) {
+    background: url(../반응형웹/반응형img//포트폴리오7.png);
+    background-size: contain;
+}
+.img:nth-child(4) {
+    background: url(../반응형웹/반응형img//포트폴리오3.jpg);
+    background-size: contain;
+    height: 220px;
+}
+.img:nth-child(5) {
+    background: url(../반응형웹/반응형img//포트폴리오5.png);
+    background-size: contain;
+    height: 150px;
+}
+.img:nth-child(6) {
+    background: url(../반응형웹/반응형img//포트폴리오8.jpg);
+    background-size: contain;
+    height: 220px;
+}
+.img:nth-child(7) {
+    background: url(../반응형웹/반응형img//포트폴리오2.png);
+    background-size: contain;
+}
+.img:nth-child(8) {
+    background: url(../반응형웹/반응형img//포트폴리오6.png);
+    background-size: contain;
+    height: 365px;
+}
+.img:nth-child(9) {
+    background: url(../반응형웹/반응형img//포트폴리오9.png);
+    background-size: contain;
+}
+
+/* IMG부분 */
+.subtitle {
+    text-align: center;
+}
+.subtitle > h2 {
+    font-size: 4vw;
+    letter-spacing: 10px;
+    color: #96b5f4;
+}
+.subtitle > h3 {
+    font-size: 1vw;
+    color: #989797;
+}
+.space2 {
+    width: auto;
+    height: 60px;
+}
+/* contact부분 */
+.contact_section {
+    width: 100%;
+    height: 440px;
+    background-color: #ffffff;
+}
+.contact_section div {
+    text-align: center;
+}
+.conttext > p {
+    color: #989797;
+}
+.contact_section > div > ul > li {
+    display: inline-block;
+}
+.icon1 {
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #a08cae;
+    transform: rotate(45deg);
+    margin: 0 25px;
+    margin-top: 35px;
+}
+.icon1 > i {
+    transform: rotate(-45deg);
+    padding: 15px 5px;
+}
+/* contact부분 */
+/* footer부분 */
+footer {
+    width: 100%;
+    height: 85px;
+    background-color: #6f6f6f;
+    color: #e1e1e1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer부분 */
+
+/* 모바일 */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .img {
+        display: none;
+    }
+    .img:nth-child(1) {
+        display: block;
+    }
+    .img:nth-child(4) {
+        display: block;
+    }
+    .img:nth-child(7) {
+        display: block;
+    }
+    .rtg {
+        width: 5.5em;
+        height: 5.5em;
+    }
+    .test {
+        font-size: 55pt;
+        padding: 10px 30px;
+    }
+    /* .hpb_section ul{flex-direction: column;align-items: center;} */
+    .hpb_section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subtitle > h3 {
+        display: none;
+    }
+    .conttext {
+        display: none;
+    }
+    .icon1 {
+        border-radius: 20px;
+        color: white;
+        width: 60px;
+        height: 60px;
+    }
+    nav ul {
+        display: none;
+    }
+    button {
+        display: block;
+    }
+}
+/* 모바일 */
+/* PC */
+@media all and (max-width: 1024px) {
+}
+/* PC */
+/* 태블릿 */
+/* @media all and (min-width: 768px) and (max-width: 1023px) {
+    .nav{display: flex;justify-content: space-between;}
+    button{
+        display: none;
+    } */
+/* 태블릿 */

@@ -26,7 +26,7 @@ nav > a > h3 {
     color: #383838;
     float: left;
     font-family: MoeumT R;
-    font-size: 30pt;
+    font-size: 2.5vw;
 }
 nav > a > h3 > b {
     color: #3e98cc;
@@ -42,11 +42,11 @@ nav > #menu >ul > li {
 }
 nav > #menu > ul > li > a {
     
-    font-size: 17pt;
+    font-size: 1vw;
 }
-/* button{border: none;background-color: white;cursor: pointer;}
+button{border: none;background-color: white;cursor: pointer;display: none;}
 .button{width:25px;height: 1px;border: black 2px solid;background-color: black;
-        margin:7px 0} */
+        margin:7px 0}
 /* nav부분 */
 /* header부분 */
 header {
@@ -80,7 +80,7 @@ header {
 /* HPB부분*/
 .hpb_section {
     width: 100%;
-    height: 410px;
+    height: auto;
     background-color: #ffffff;
 }
 /* .hpb_section >div{
@@ -89,39 +89,20 @@ header {
     align-items: center;
 } */
 
-#hpb{width: 100%;height: 240px;}
-#rtgh {
+.rtg{
     width: 7em;
     height: 7em;
     border-radius: 20px;
     background-color: #a08cae;
     transform: rotate(45deg);
+    margin:0 auto 
 }
-#rtgp {
-    width: 7em;
-    height: 7em;
-    border-radius: 20px;
-    background-color: #a08cae;
-    transform: rotate(45deg);
-    
-}
-#rtgb {
-    width: 7em;
-    height: 7em;
-    border-radius: 20px;
-    background-color: #a08cae;
-    transform: rotate(45deg);
-}
-.test{transform: rotate(-45deg);font-size: 60pt;padding:20px 40px;
-color:white;font-weight: bolder;}
-.title{margin-top: -25px;}
-.title>ul>li>div{color:#989797;font-weight: bolder;font-size: 16pt;margin-bottom: 10px;}
-/* .text2{margin:0 -380px;} */
-.content div{text-align: center;color:#989797;font-size: 11pt;}
-/* .cont2{margin:0 -330px} */
-#hpb ul{display: flex;justify-content: space-around;}
-.title ul{display: flex;justify-content: space-around}
-.content ul{display: flex;justify-content: space-around}
+.test{transform: rotate(-45deg);font-size: 60pt;padding:20px 40px;color:white;font-weight: bolder;}
+.content{text-align: center;color:#989797;font-size: 11pt;}
+.hpb_section ul{display: flex;justify-content: space-around;}
+.cont{width:350px;}
+.rtg{margin-top:20px}
+
 
 /* HPB부분*/
 /* IMG부분 */
@@ -130,10 +111,26 @@ color:white;font-weight: bolder;}
     height: 1240px;
     background-color: #cecbdd;
 }
-img{display: block;margin: 30px 0;}
-.img{display:flex;flex-wrap: wrap;cursor: pointer;justify-content: center;}
+/* img{display: block;margin: 30px 0;} */
+/* .img{display:flex;flex-wrap: wrap;cursor: pointer;justify-content: center;}
 .img1{width: 305px;height: 780px;margin: 60px 35px;}
-.img2{width: 305px;height: 920px;}
+.img2{width: 305px;height: 920px;} */
+
+.imgwrap{width:63%;;margin:0 auto;display:flex;flex-wrap: wrap;
+    flex-direction: row;justify-content: center;align-items: center;
+    }
+.img{width: 305px;height: 260px;background-color: black;margin:10px 10px}
+.img:nth-child(1){background: url(../디자인/반응형img/포트폴리오1.png);background-size: contain;}
+.img:nth-child(2){background: url(../디자인/반응형img/포트폴리오4.png);background-size: contain;height: 365px;}
+.img:nth-child(3){background: url(../디자인/반응형img/포트폴리오7.png);background-size: contain;}
+.img:nth-child(4){background: url(../디자인/반응형img/포트폴리오3.jpg);background-size: contain;height: 220px;}
+.img:nth-child(5){background: url(../디자인/반응형img/포트폴리오5.png);background-size: contain;height: 150px;}
+.img:nth-child(6){background: url(../디자인/반응형img/포트폴리오8.jpg);background-size: contain;height: 220px;}
+.img:nth-child(7){background: url(../디자인/반응형img/포트폴리오2.png);background-size: contain;}
+.img:nth-child(8){background: url(../디자인/반응형img/포트폴리오6.png);background-size: contain;height: 365px;}
+.img:nth-child(9){background: url(../디자인/반응형img/포트폴리오9.png);background-size: contain;}
+
+
 /* IMG부분 */
 .subtitle{text-align: center;}
 .subtitle>h2{font-size: 4vw;letter-spacing: 10px;color:#96b5f4}
@@ -167,8 +164,20 @@ footer {
 
 /* 모바일 */
 @media all and (min-width: 320px) and (max-width: 767px) {
-    .img1{display: none;}
-    .img3{display: none;}
+    .img{display: none;}
+    .img:nth-child(1){display: block;}
+    .img:nth-child(4){display: block;}
+    .img:nth-child(7){display: block;}
+    .rtg{width: 5.5em;height: 5.5em;}
+    .test{font-size: 55pt;padding:10px 30px;}
+    /* .hpb_section ul{flex-direction: column;align-items: center;} */
+    .hpb_section ul{flex-direction: column;align-items: center;}
+    .subtitle>h3{display: none;}
+    .conttext{display: none;}
+    .icon1{ border-radius: 20px;color:white;width: 60px;height: 60px}
+    nav ul{display: none;}
+    button{display: block;}
+    
 }
 /* 모바일 */
 /* PC */
