@@ -70,7 +70,7 @@ header {
     width: 100%;
     height: 710px;
     background-color: darkolivegreen;
-    background: url("../반응형웹/반응형img//header2_2.jpg");
+    background: url("../web/반응형img//header2_2.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -159,44 +159,44 @@ header {
     margin: 3px 10px;
 }
 .img:nth-child(1) {
-    background: url(../반응형웹/반응형img//포트폴리오1.png);
+    background: url(../web/반응형img//포트폴리오1.png);
     background-size: contain;
 }
 .img:nth-child(2) {
-    background: url(../반응형웹/반응형img//포트폴리오4.png);
+    background: url(../web/반응형img//포트폴리오4.png);
     background-size: contain;
     height: 365px;
 }
 .img:nth-child(3) {
-    background: url(../반응형웹/반응형img//포트폴리오7.png);
+    background: url(../web/반응형img//포트폴리오7.png);
     background-size: contain;
 }
 .img:nth-child(4) {
-    background: url(../반응형웹/반응형img//포트폴리오3.jpg);
+    background: url(../web/반응형img//포트폴리오3.jpg);
     background-size: contain;
     height: 220px;
 }
 .img:nth-child(5) {
-    background: url(../반응형웹/반응형img//포트폴리오5.png);
+    background: url(../web/반응형img//포트폴리오5.png);
     background-size: contain;
     height: 150px;
 }
 .img:nth-child(6) {
-    background: url(../반응형웹/반응형img//포트폴리오8.jpg);
+    background: url(../web/반응형img//포트폴리오8.jpg);
     background-size: contain;
     height: 220px;
 }
 .img:nth-child(7) {
-    background: url(../반응형웹/반응형img//포트폴리오2.png);
+    background: url(../web/반응형img//포트폴리오2.png);
     background-size: contain;
 }
 .img:nth-child(8) {
-    background: url(../반응형웹/반응형img//포트폴리오6.png);
+    background: url(../web/반응형img//포트폴리오6.png);
     background-size: contain;
     height: 365px;
 }
 .img:nth-child(9) {
-    background: url(../반응형웹/반응형img//포트폴리오9.png);
+    background: url(../web/반응형img//포트폴리오9.png);
     background-size: contain;
 }
 
