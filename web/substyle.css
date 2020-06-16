@@ -9,13 +9,10 @@ a:visited {
 a:hover {
     color: #40adf7;
 }
-#wrap {
-    width: 100%;
-    margin: 0 auto;
-}
 * {
     font-family: MoeumT R;
 }
+p{color:#989797}
 /* nav부분 */
 nav {
     display: flex;
@@ -69,11 +66,11 @@ header {
     width: 100%;
     height: 300px;
     background-color: darkolivegreen;
-    background: url("../반응형웹/반응형img//header2_2.jpg");
+    background: url("../web/반응형img//header2_2.jpg");
     background-size: cover;
 }
 /* header */
-.sectionwrap{width:100%;height: 730px;}
+.sectionwrap{width:100%;height: 780px;}
 .subtitle{text-align: center;}
 .subtitle>h2{font-size: 4vw;letter-spacing: 15px;color:#96b5f4}
 .subtitle>h3{font-size: 0.7vw;color:#989797;margin-left: 100px;}
@@ -81,6 +78,41 @@ header {
 .space2{width: 100%;height: 40px;}
 .contentwrap{display: flex;justify-content: center;flex-direction: column;}
 .contentwrap div p{text-align: center;}
+.hpb_section {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+.rtg {
+    width: 7em;
+    height: 7em;
+    border-radius: 20px;
+    background-color: #a08cae;
+    transform: rotate(45deg);
+    margin: 0 auto;
+}
+.test {
+    transform: rotate(-45deg);
+    font-size: 60pt;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bolder;
+}
+.content {
+    text-align: center;
+    color: #989797;
+    font-size: 11pt;
+}
+.hpbwrap ul {
+    display: flex;
+    justify-content: space-around;
+}
+.cont {
+    width: 350px;
+}
+.rtg {
+    margin-top: 20px;
+}
 /* section */
 
 footer {
