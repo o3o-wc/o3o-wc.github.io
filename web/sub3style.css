@@ -1,0 +1,9 @@
+
+@media (max-width: 767px) {
+.contact_section > div > ul > li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.contact_section{height: auto;}
+}

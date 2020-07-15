@@ -14,25 +14,26 @@
     </head>
     <body>
         <div id="wrap">
-            <nav class="nav">
-                <ul>
-                <li><a href="#">
-                    <h3><b>L</b>im <b>J</b>ae<b>C</b>hang</h3>
-                </a></li>
-                <li>
-                <div id="menu">
-                    <ul>
-                        <li><a href="#" style="color: #40adf7;">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-                </li>
-                </ul>
-                <button type="button"><div class="button"></div><div class="button"></div><div class="button"></div></button>
-            </nav>
-            <header class="header">
+                <header id="head">
+                    <div class="logo">
+                        <h3><b>L</b>im <b>J</b>ae<b>C</b>hang</h3>
+                    </div>
+                    <nav class="gnb">
+                      <input type="checkbox" id="menu_btn" />
+                      <label for="menu_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
+                      <ul class="main_menu">
+                        <li><a href="반응형웹.html" style="color: #40adf7;; font-weight: bolder;">HOME</a></li>
+                        <li><a href="ABOUT.html">ABOUT</a></li>
+                        <li><a href="PORTFOLIO.html">PORTFOLIO</a></li>
+                        <li><a href="CONTACT.html">CONTACT</a></li>
+                      </ul>
+                    </nav>
+            </header>
+            <div class="header">
                 <div class="background">
                     <div class="banner">
                         <div class="space"></div>
@@ -40,82 +41,65 @@
                         <h3>Lim JaeChang</h3>
                     </div>
                 </div>
-            </header>
-            <section class="hpb_section">
-                
             </div>
-            <div class="space"></div>
-            <div class="item">
-                <div class="space"></div>
-                <div class="change">
-                    <input type="radio" name="tab" id="cha1" checked />
-                    <input type="radio" name="tab" id="cha2" />
-                    <input type="radio" name="tab" id="cha3" />
-      
-        <label for="cha1"><div class="chrtg"></div></label>
-        <label for="cha2"><div class="chrtg"></div></label>
-        <label for="cha3"><div class="chrtg"></div></label>
-      
-                    </div>
-                    <div class="container">
-                    <ul>
-                        
-                        <li>
-                            <div class="cont">
-                            
-                            <div class="rtg"><div class="test">H</div></div>
-                            <Br><br>
-                            <div class="content">
-                            <p>
-                            <h2>HOMEPAGE</h2>
-                            <br>
-                            디자인 시안 작업을 포함하여 반응형웹, 모바일웹
-                            등의 프랫폼에 최적화된 홈페이지 디자인 작업 및
-                            웹프로그램
-                            개발까지 고객이 원하는 전략에 충실하게 수행하여
-                            성공적인
-                            디자이너가 되도록 최선을 다하고 있습니다.
-                            </div>
-                        </div>
-                        </li>
-                        <li>
-                        <div>
-                            <div class="cont">
-                            <div class="rtg"><div class="test">P</div></div>
-                            <Br><br>
-                            <div class="content">
-                            <h2>PUBLSHING</h2><Br>
-                            <p>
-                            Creative Design(Web/Mobile, UX/UI)
-                            HTML5 / CSS3 웹표준, 모바일웹 퍼블리싱
-                            웹프로그램 개발, 웹프로모션 컨설팅
-                            홈페이지 유지보수/관리
-                            </p>
-                            </div>
-                            </div>
-                        </div>
-                        </li>
-                        <li>
-                            <div class="cont">
-                            <div class="rtg"><div class="test">B</div></div>
-                            <br><br>
-                            <div class="content">
-                            <h2>BRANDING</h2><br>
-                            <p>
-                            풍부한 온라인 마케팅 경험과 역량을 바탕으로
-                            통합 웹서비스를 제안드리며,
-                            창의적인 발상과 폭 넓은 네트워크를 기반하여 다양한
-                            전문분야의 효과적인 Creative Design 방법론을 제안합니다.
-                            </p>
-                            </div>
-                        </div>
-                        </li>
-                        </ul>
-                        </div>
+           
+            <section id="hpb_section">
+                <input type="radio" name="tab" id="tab1" checked />
+                <input type="radio" name="tab" id="tab2" />
+                <input type="radio" name="tab" id="tab3" />
+                <div class="tab_btn">
+                  <label for="tab1"></label>
+                  <label for="tab2"></label>
+                  <label for="tab3"></label>
                 </div>
-            
-                <div class="space"></div>
-            </section>
+                <div class="container">
+                  <div class="item">
+                    <div class="rot">
+                      <p>H</p>
+                    </div>
+                    <div>
+                      HOMEPAGE
+                    </div>
+                    <div class="itemcontent">
+                        디자인 시안 작업을 포함하여 반응형웹, 모바일웹
+                        등의 프랫폼에 최적화된 홈페이지 디자인 작업 및
+                        웹프로그램
+                        개발까지 고객이 원하는 전략에 충실하게 수행하여
+                        성공적인
+                        디자이너가 되도록 최선을 다하고 있습니다.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="rot">
+                      <p>P</p>
+                    </div>
+                    <div>
+                      PUBLISING
+                    </div>
+                    <div class="itemcontent">
+                        Creative Design(Web/Mobile, UX/UI)
+                        HTML5 / CSS3 웹표준, 모바일웹 퍼블리싱
+                        웹프로그램 개발, 웹프로모션 컨설팅
+                        홈페이지 유지보수/관리
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="rot">
+                      <p>B</p>
+                    </div>
+                    <div>
+                        BRANDING
+                    </div>
+                    <div class="itemcontent">
+                        풍부한 온라인 마케팅 경험과 역량을 바탕으로
+                        통합 웹서비스를 제안드리며,
+                        창의적인 발상과 폭 넓은 네트워크를 기반하여 다양한
+                        전문분야의 효과적인 Creative Design 방법론을 제안합니다.
+                    </div>
+                  </div>
+                </div>
+              </section>
+             
             <section class="img_section">
                 <div class="space2"></div>
                 <div class="subtitle">
@@ -138,12 +122,12 @@
                     <img src="../web/반응형img//포트폴리오8.jpg" width="305" height="220" title="8">
                     <img src="../web/반응형img//포트폴리오9.png" width="305" height="260" title="9">
                 </div>
-                <div class="modal">
-                    <div class="close">&times;</div>
-                    <img class="modal-content" src="반응형img/포트폴리오1.png" alt="모달">
                 </div>
-                
-                </section>
+            </section>
+                    <div class="modal">
+                        <div class="close">&times;</div>
+                        <img class="modal-content" src="반응형img/포트폴리오1.png" alt="모달">
+                    </div>
             </section>
             <section class="contact_section">
                 <div class="space2"> </div>
@@ -180,15 +164,15 @@
             img.addEventListener("click", function (e) {
                 console.log(e.target);
                 if(this==e.target)return;
-                let targetSrc = e.target.getAttribute("src")
+                let targetSrc = e.target.getAttribute("src");
                 // modal display block
-                modalTag.style.display="block"
+                modalTag.style.display="block";
                 modalTag.children[1].src=targetSrc
             });
             const closebtn = modalTag.children[0]
             console.log(closebtn)
             closebtn.addEventListener("click",function(){
-                modalTag.style.background="none";
+                modalTag.style.display="none";
                 console.log(modalTag);
             })
         </script>
