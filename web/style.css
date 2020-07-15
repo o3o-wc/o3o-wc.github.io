@@ -53,17 +53,18 @@ a:hover {
     height: 30px;
     margin: 10px auto;
     position: relative;
+    cursor: pointer;
 }
 #head > .gnb label[for="menu_btn"] span {
     display: inline-block;
     width: 100%;
     border-bottom: 5px solid #000;
     border-radius: 8px;
-
+    
     position: absolute;
     transition: 0.3s;
 }
-/* 버튼 */
+
 #head
     > .gnb
     > input[id="menu_btn"]:checked
@@ -177,6 +178,7 @@ a:hover {
     background-color: darkgray;
     border-radius: 3px;
     opacity: 0.5;
+    cursor: pointer;
 }
 #hpb_section > input[name="tab"] {
     display: none;
