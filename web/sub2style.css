@@ -11,7 +11,7 @@ a:hover {
     width: auto;
     height: 60px;
 }
-.background {
+.subbackground {
     width: 100%;
     height: 410px;
     background-color: darkolivegreen;
@@ -356,14 +356,7 @@ footer {
         display: none;
     }
 
-    nav {
-        height: 60px;
-    }
 
-    /* nav>ul>li:first-child{position: absolute;left:45px;top:25px} */
-    nav ul {
-        flex-direction: column;
-    }
     #menu {
         display: none;
     }
@@ -453,7 +446,44 @@ footer {
           background-color: #222;
           color: #fff;
       }
+      
+    #head > .gnb > .main_menu {
+        display: none;
+      }
+      
+      #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
+        display: block;
+      }
+      /* 메인메뉴 display */
+      
+      #head > .gnb > .main_menu {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        background-color: #fff;
+        width: 100%;
+      }
+      #head > .gnb > .main_menu li {
+          text-align: left;
+      }
+      #head > .gnb > .main_menu li > a {
+        display: inline-block;
+        padding: 10px;
+        color: #000;
+        width: 100%;  
+      }
+      #head > .gnb > .main_menu li:hover a{
+          background-color: #222;
+          color: #fff;
+      }
+      #head > .gnb label[for="menu_btn"] {
+        display: inline-block;
+       
+        margin-right: 15px;
+        z-index: 3;
     }
+}
+
 
 /* 모바일 */
 /* PC */

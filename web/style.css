@@ -377,7 +377,6 @@ footer {
         height: 60px;
     }
 
-    /* nav>ul>li:first-child{position: absolute;left:45px;top:25px} */
     nav ul {
         flex-direction: column;
     }
