@@ -40,7 +40,7 @@
                 item3[i].classList.remove("item3_spin");
             }
             test.classList.remove("test_spin");
-            test.classList.remove("test2_spin");
+            test2.classList.remove("test2_spin");
     })
 
 

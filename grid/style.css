@@ -151,7 +151,7 @@ a:hover {
 }
 .item_spin:nth-of-type(3){
     transform: rotateY(360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item:nth-of-type(4) {
     background: #242424 url("../grid/image/1/필름.png");
@@ -177,11 +177,11 @@ a:hover {
 }
 .item_spin:nth-of-type(6){
     transform: rotateY(360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item_spin:nth-of-type(7) {
     transform: rotateY(360deg);
-    transition: 2s; 
+    transition: 1s; 
 }
 .item:nth-of-type(8) {
     grid-column: 2 / span 2;
@@ -276,7 +276,7 @@ a:hover {
 }
 .item2_spin:nth-of-type(3){
     transform: rotateY(360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item2_spin:nth-of-type(4){
     transform: rotateX(360deg);
@@ -288,15 +288,15 @@ a:hover {
 }
 .item2_spin:nth-of-type(6){
     transform: rotateY(360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item2_spin:nth-of-type(7){
     transform: rotateY(-360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item2_spin:nth-of-type(8){
     transform: rotateY(-360deg);
-    transition: 2s;
+    transition: 1s;
 }
 .item2_spin:nth-of-type(9){
     transform: rotateX(360deg);
@@ -373,7 +373,7 @@ background-color: #242424;
 }
 .item3_spin{
     transform: rotateY(360deg);
-    transition: 1.5s;
+    transition: 1s;
 }
 
 /*삼페이지 회전  */
