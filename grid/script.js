@@ -5,8 +5,11 @@
     const container=document.querySelectorAll(".container")
     const item=document.querySelectorAll(".item");
     const item2=document.querySelectorAll(".item2");
+    const item3=document.querySelectorAll(".item3");
+    const test=document.querySelector(".test");
+    const test2=document.querySelector(".test2");
     console.log(container)
-    console.log(item2)
+    console.log(test2)
     console.log(gnb)
     btn.addEventListener("click",function(e){
         let target = e.target;
@@ -33,7 +36,11 @@
             for(let i=0;i<11;i++){
                 item2[i].classList.remove("item2_spin");
             }
-        
+            for(let i=0;i<7;i++){
+                item3[i].classList.remove("item3_spin");
+            }
+            test.classList.remove("test_spin");
+            test.classList.remove("test2_spin");
     })
 
 
@@ -73,8 +80,8 @@
         }
         if(index == 2){
             mainmenu.classList.add("menu_deg");
-            for(let i=0;i<9;i++){
-                item[i].classList.add("item_spin");
+            for(let i=0;i<7;i++){
+                item3[i].classList.add("item3_spin");
             }
             for(let i=0;i<3;i++){
             container[i].classList.add("container_deg");
@@ -83,6 +90,8 @@
             container[1].classList.add("hide");
             container[0].classList.add("hide");
             btn.classList.add("btn_menu_op");
+            test.classList.add("test_spin");
+            test2.classList.add("test2_spin");
 
         }
         mainmenu.classList.remove("menu_deg");

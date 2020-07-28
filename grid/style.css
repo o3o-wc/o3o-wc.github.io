@@ -28,12 +28,24 @@ a:hover {
     z-index: 3;
     font-size: 43px;
     color: white;
+    /* animation: ani linear alternate infinite 0.5s; */
+}
+.btn_menu:hover{
+    /* animation-play-state: paused; */
+    animation: ani linear alternate infinite 0.5s;
 }
 .btn_menu_op {
     display: none;
 }
 .btn_menu > i {
     cursor: pointer;
+}
+@keyframes ani{
+    0%{transform: scale(1);opacity: 1;}
+    25%{transform: scale(1.15);opacity: 0.9;}
+    50%{transform: scale(1.25); opacity: 0.75;} 
+    75%{transform: scale(1.4);opacity: 0.5;}
+    100%{transform: scale(1.5);opacity: 0.25;}
 }
 /*왼쪽 메뉴바  */
 .menu {
@@ -279,11 +291,11 @@ a:hover {
     transition: 2s;
 }
 .item2_spin:nth-of-type(7){
-    transform: rotateY(360deg);
+    transform: rotateY(-360deg);
     transition: 2s;
 }
 .item2_spin:nth-of-type(8){
-    transform: rotateY(360deg);
+    transform: rotateY(-360deg);
     transition: 2s;
 }
 .item2_spin:nth-of-type(9){
@@ -299,3 +311,69 @@ a:hover {
     transition: 1s;
 }
 /* 둘페이지 회전 */
+/* 삼페이지 이미지 */
+.item3 {
+    /* border: 1px red solid; */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test{
+    grid-row:3/span 2 ;
+    grid-column: 3/span 2  ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background: url("../grid/image/3/숲.png");
+    background-size: cover;
+
+}
+.test2{
+    grid-row:span 2 ;
+    grid-column: 3/span 2  ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background: url("../grid/image/3/산.png");
+    background-size: cover;
+
+}
+
+.item3:nth-of-type(4){
+    grid-column: span 2;
+    grid-row: span 3;
+    background:url("../grid/image/3/좌측.png");
+    
+}
+
+.test >.item3:nth-of-type(2){
+background-color: #242424;
+}
+.test2 > .item3:nth-of-type(1){
+    grid-column: span 2;
+}
+.test2 > .item3:nth-of-type(2){
+    background: #242424;
+}
+
+/* 삼페이지 이미지 */
+/* 삼페이지 회전 */
+.test_spin{
+    transform: rotateX(-360deg);
+    transition: 1s;
+}
+.test2_spin{
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item3_spin{
+    transform: rotateY(360deg);
+    transition: 1.5s;
+}
+
+/*삼페이지 회전  */
