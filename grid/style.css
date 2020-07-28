@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: skyblue;
+}
+/* 전체 레이아웃 */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    perspective: 800px;
+    /* background-color: #141317; */
+}
+/* 햄버거메뉴 */
+.btn_menu {
+    /* 위치지정 */
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    /* 크기지정 */
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    font-size: 43px;
+    color: white;
+}
+.btn_menu_op {
+    display: none;
+}
+.btn_menu > i {
+    cursor: pointer;
+}
+/*왼쪽 메뉴바  */
+.menu {
+    width: 180px;
+    height: 100vh;
+    background-color: whitesmoke;
+    transform-origin: left center;
+    transition: 1s;
+    transform: rotateY(140deg);
+    opacity: 0;
+}
+.menu_deg {
+    /* transform-origin: left center; */
+    opacity: 1;
+    transform: rotateY(80deg);
+    transition: 1s;
+}
+.gnb > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gnb > ul > li {
+    font-size: 34px;
+    
+}
+.space{
+    width: 10px;
+    height: 50px;
+}
+/* .gnb > ul > li > img{margin-top: 95px;} */
+.logo {
+    text-align: center;
+}
+.logo > img {
+    margin-top: 95px;
+}
+/* 컨텐츠 */
+.container {
+    display: grid;
+    background-color: #141317;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    /* gird 설정 */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.hide{
+    z-index: -10;
+}
+.container_deg {
+    transform-origin: right center;
+    transform: rotateY(-9deg);
+    transition: 1s;
+}
+/* 첫페이지 이미지 */
+.item {
+    /* border: 1px red solid; */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item ul {
+    display: flex;
+}
+.item ul li {
+    margin: 15px;
+    opacity: 0.9;
+    color: #242424;
+}
+.item ul li:hover {
+    opacity: 1;
+    color:white;
+    cursor: pointer;
+}
+.item:nth-of-type(1) {
+    grid-row: 1 / span 2;
+}
+.item_spin:nth-of-type(1){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item:nth-of-type(2) {
+    background: #1f1d27 url("../grid/image/1/영사기.png");
+}
+.item_spin:nth-of-type(2){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item:nth-of-type(3) {
+    grid-column: 3 / span 2;
+    background: #242424 url("../grid/image/1/찢어진종이.png");
+}
+.item_spin:nth-of-type(3){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item:nth-of-type(4) {
+    background: #242424 url("../grid/image/1/필름.png");
+}
+/* 첫페이지 이미지 */
+/* 첫페이지 회전 */
+.item_spin:nth-of-type(4){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item:nth-of-type(5) {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+    background: #1f1d27 url("../grid/image/1/사진.png");
+}
+.item_spin:nth-of-type(5){
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+.item:nth-of-type(6) {
+    grid-row: 3 / span 2;
+    background: #242424 url("../grid/image/1/카메라.png");
+}
+.item_spin:nth-of-type(6){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item_spin:nth-of-type(7) {
+    transform: rotateY(360deg);
+    transition: 2s; 
+}
+.item:nth-of-type(8) {
+    grid-column: 2 / span 2;
+    text-align: right;
+}
+.item_spin:nth-of-type(8){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+/* 첫페이지 회전 */
+/* 둘페이지 이미지 */
+.item2 {
+    /* border: 1px red solid; */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.item2:nth-of-type(3){
+    grid-row:span 3;
+    background-color: #242424;
+}
+.item2:nth-of-type(6){
+    grid-row:span 3;
+    background:#242424;
+}
+.item2:nth-of-type(7){
+    background:#242424;
+    
+}
+.item2:nth-of-type(8){
+    background: #242424;
+    
+}
+
+.item2:nth-of-type(11){
+    grid-column:span 2;
+}
+.item2:nth-of-type(3) >.animalimg{
+    background:url("../grid/image/2/cat.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 95%;
+    
+}
+.item2:nth-of-type(6) >.animalimg{
+    background:url("../grid/image/2/dog.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 95%;
+    
+}
+.item2:nth-of-type(7) >.animalimg{
+    background:url("../grid/image/2/hedgehog.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+    
+}
+.item2:nth-of-type(8) >.animalimg{
+    background:url("../grid/image/2/raccoon.png");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+    
+}
+.item2:nth-of-type(10) >.animalimg{
+    background: url("../grid/image/2/Untitled-1\ copy.png");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+}
+/*둘페이지 이미지 */
+/* 둘페이지 회전 */
+.item2_spin:nth-of-type(1){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(2){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(3){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item2_spin:nth-of-type(4){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(5){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(6){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item2_spin:nth-of-type(7){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item2_spin:nth-of-type(8){
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.item2_spin:nth-of-type(9){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(10){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.item2_spin:nth-of-type(11){
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+/* 둘페이지 회전 */
