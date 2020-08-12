@@ -9,11 +9,14 @@
         // 현재 시간과 날짜에서 분을 받아옴
         const hours = date.getHours();
         // 현재 시간과 날짜에서 시간을 받아옴
+        const seconds = date.getSeconds();
+        //현재 시관가 날짜에서 초를 받아옴
         clocktitle.innerText=`${hours<10 ? `0${hours}`:hours}:${minutes < 10 ? `0${minutes}`:minutes}:${seconds < 10 ? `0${seconds}` : seconds }`;
         // clocktitle 의 내용을 변경 / 시,분,초 의 단위가 10보다 작을시 앞에 0을 붙임
     }//현재 시간을 받아오는 함수
+
+
     function timeset(){
-        gettime();// 홈페이지를 실행시 실행딜레이를 제거
         gettime();
         // 홈페이지를 실행시 실행딜레이를 제거
         setInterval(gettime,1000);
