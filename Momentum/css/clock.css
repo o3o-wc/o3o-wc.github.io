@@ -32,6 +32,9 @@ input::placeholder{
 .weather_text{
     font-size: 15pt;
     font-weight: bold;
+    position: absolute;
+    top:15px;
+    right: 15px;
 }
 body{
     background: url("../images/1.jpg");
