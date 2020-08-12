@@ -1,7 +1,39 @@
-form > input {
+@charset "utf-8";
+*{
+    color:whitesmoke;
+    text-shadow: 2px 2px 7px black;
+}
+.wrap{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input,.iptext {
     border: none;
+    background-color: transparent;
     text-align: center;
+    font-size: 30pt;
+}
+input::placeholder{
+    color:whitesmoke;
+    text-shadow: 2px 2px 7px black;
 }
 .hide{
     display: none;
+}
+
+.clock_title{
+    font-size: 130pt;
+}
+.weather_text{
+    font-size: 15pt;
+    font-weight: bold;
+}
+body{
+    background: url("../images/1.jpg");
+    background-size: cover;
 }

@@ -76,4 +76,6 @@
         loadname();
     }
     nameactive();
+    // 이름등록
+
 })()
