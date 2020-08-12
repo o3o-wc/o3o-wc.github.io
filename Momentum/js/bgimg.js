@@ -6,7 +6,7 @@
     function img_src(img_number){
         const image = new Image();
         bodyelm.style=`background:url(../Momentum/images/${img_number + 1}.jpg)`;
-        image.classList.add("bgimg")
+        //0~4의 숫자를 랜덤 변경후 1을더함 css의 body 의 background:url 속성의 값을 실행할떄마다 랜덤으로 변경
         bodyelm.appendChild(image)
 
     }
@@ -21,5 +21,4 @@
         img_src(randomnumber);
     }
     background();
-     //배경이미지
 })()

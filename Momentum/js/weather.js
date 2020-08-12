@@ -15,8 +15,8 @@
   .then(function(myJson) {
     // console.log(JSON.stringify(myJson));
     // console.log(myJson);
-    const name = myJson.name;
-    const temp = Math.floor(myJson.main.temp);
+    const name = myJson.name;//위도 상위치를 표시해줌 
+    const temp = Math.floor(myJson.main.temp);//Math.floor =>소수점을 버려주는역할/좌표의 지역의 온도를 표시해줌
     weather_text.innerHTML=`지역: ${name} 온도:${temp}℃`
   });
     }
