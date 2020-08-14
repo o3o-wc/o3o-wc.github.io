@@ -40,3 +40,6 @@ body{
     background: url("../images/1.jpg");
     background-size: cover;
 }
+.day_text{
+    font-size: 20pt;
+}
