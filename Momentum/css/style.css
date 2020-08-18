@@ -19,10 +19,19 @@ form > input,.iptext {
     font-size: 30pt;
     
 }
+.iptext button{
+    font-weight: bold;
+    cursor: pointer;
+    background:none;
+    border:none;
+    color: red;
+
+}
 input::placeholder{
     color:whitesmoke;
     text-shadow: 2px 2px 7px black;
 }
+
 .hide{
     display: none;
 }
@@ -52,4 +61,20 @@ body{
 .calendar:hover{
     color:darkgrey;
     cursor: pointer;
+}
+
+.todolist > input {
+    
+    border-bottom:3px white solid;
+}
+
+.dolist_text{
+    font-size: 30pt;
+}
+.dolist_text button{
+    cursor: pointer;
+    font-size: 25pt;
+    background:none;
+    width:45px;
+    height: 45px;
 }

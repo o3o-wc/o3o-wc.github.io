@@ -1,6 +1,6 @@
 (function(){
     const clockcontainer = document.querySelector(".js-clock"),
-     clocktitle = clockcontainer.querySelector("h1");
+    clocktitle = clockcontainer.querySelector("h1");
 
     function gettime() {
         const date = new Date();
@@ -26,8 +26,8 @@
     //  실시간 시간 업데이트
 
     const formelm = document.querySelector(".js-form"),
-          inputelm = formelm.querySelector("input[type='text']"),
-          iptext = document.querySelector(".js-iptext");
+        inputelm = formelm.querySelector("input[type='text']"),
+        iptext = document.querySelector(".js-iptext");
         
     const user_Lstorage = "currentUser";
     function savename(text){
@@ -52,13 +52,17 @@
     }
 
     function showingtext(text){
+        const delbtn = document.createElement("button");
+        // delbtn.innerHTML="Ⅹ"
         formelm.classList.add("hide");
         //form에 hide 클래스 추가
         iptext.classList.remove("hide");
         //iptext(h4)에 hide 클래스 제거
         iptext.innerHTML = `Hello ${text}`;
+        iptext.appendChild(delbtn)
         //iptext(h4)에 Hello ${text} => text입력내용 =Hello text내용
     }
+
 
     function loadname(){
         const currentUser = localStorage.getItem(user_Lstorage);
@@ -74,6 +78,7 @@
 
     function nameactive(){
         loadname();
+        
     }
     nameactive();
     // 이름등록

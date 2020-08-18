@@ -4,26 +4,51 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Momentum</title>
-        <link rel="stylesheet" type="text/css" href="../Momentum/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="../Momentum/css/reset.css"/>
-        <script src="https://kit.fontawesome.com/18daecf7d8.js" crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Momentum/css/style.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Momentum/css/reset.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/18daecf7d8.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <div class="wrap">
             <div class="conatiner">
-        <div class="js-clock clock">
-            <h1 class="js-title clock_title">00:00</h1>
-        </div>
-        <span class="js-day_text day_text">0000-00-00</span>
-        <i class="fas fa-calendar-alt calendar"></i>
-        <form class="js-form form hide">
-            <input type="text" placeholder="Enter Your Name..." />  
-        </form>
-        <h4 class="js-iptext iptext hide"></h4>
-        <div id="view-weather">
-            <span class="js-weather_text weather_text"></span>
-        </div>
-        </div>
+                <div class="js-clock clock">
+                    <h1 class="js-title clock_title">00:00</h1>
+                </div>
+                <!-- 시간 표시 -->
+                <span class="js-day_text day_text">0000-00-00</span>
+                <!-- 날짜 표시 -->
+                <!-- <i class="fas fa-calendar-alt calendar"></i> -->
+                <!-- 달력 아이콘 -->
+                <form class="js-form form hide">
+                    <input type="text" placeholder="Enter Your Name..." />
+                </form>
+                <h4 class="js-iptext iptext hide"></h4>
+                <!-- 이름 받기/출력 -->
+                <div id="todolist">
+                <form class="js-form2 todolist ">
+                    <input type="text" placeholder="Write To Do here" />
+                </form>
+                <ul class="js-dolist dolist_text hide">
+                    <li class="dotext"></li>
+                </ul>
+                <!-- 할일목록 추가 -->
+                </div>
+                <div id="view-weather">
+                    <span class="js-weather_text weather_text"></span>
+                </div>
+                <!-- 지역온도 -->
+            </div>
         </div>
         <script src="../Momentum/js/clock.js"></script>
         <script src="../Momentum/js/weather.js"></script>
