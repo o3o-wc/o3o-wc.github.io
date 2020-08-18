@@ -12,9 +12,8 @@
         let week =["SUN","MON","TUE","WED","THU","FRI","SAT"];
         const day =week[date.getDay()];
 
-        console.log(day)
 
-        day_text.innerHTML=`${year} - ${month < 10 ? `0${month}`:month} - ${today < 10 ? `0${today}`:today} ${day}`
+        day_text.innerHTML=`${year}-${month < 10 ? `0${month}`:month}-${today < 10 ? `0${today}`:today} ${day}`
     }
     getday()
 })()

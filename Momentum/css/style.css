@@ -2,21 +2,22 @@
 *{
     color:whitesmoke;
     text-shadow: 2px 2px 7px black;
+    text-align: center;
 }
 .wrap{
     width: 100vw;
     height: 90vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
-
 form > input,.iptext {
     border: none;
     background-color: transparent;
-    text-align: center;
     font-size: 30pt;
+    
 }
 input::placeholder{
     color:whitesmoke;
@@ -41,5 +42,14 @@ body{
     background-size: cover;
 }
 .day_text{
-    font-size: 20pt;
+    font-size:  25pt;
+    font-weight: bold;
+}
+.calendar{
+    font-size: 30px;
+    width: 50px;
+}
+.calendar:hover{
+    color:darkgrey;
+    cursor: pointer;
 }
