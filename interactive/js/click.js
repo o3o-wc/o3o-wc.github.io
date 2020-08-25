@@ -26,25 +26,28 @@
             // 
         }
         if(target.innerText == retelm[3].innerText){
-            window.scrollTo({top:bodyheigth*0.36,behavior:'smooth'})
+            // window.scrollTo({top:bodyheigth*0.4,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.38,behavior:'smooth'})
         }
         if(target.innerText == retelm[4].innerText){
-            window.scrollTo({top:bodyheigth*0.48,behavior:'smooth'})
+            // window.scrollTo({top:bodyheigth*0.52,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.50,behavior:'smooth'})
         }
         if(target.innerText == retelm[5].innerText){
-            window.scrollTo({top:bodyheigth*0.60,behavior:'smooth'})
-            // 
+            // window.scrollTo({top:bodyheigth*0.62,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.62,behavior:'smooth'})
+            
         }
         if(target.innerText == retelm[6].innerText){
             window.scrollTo({top:bodyheigth*0.72,behavior:'smooth'})
             // 
         }
         if(target.innerText == retelm[7].innerText){
-            window.scrollTo({top:bodyheigth*0.82,behavior:'smooth'})
+            // window.scrollTo({top:bodyheigth*0.89,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.85,behavior:'smooth'})
         }
         if(target.innerText == retelm[8].innerText){
             window.scrollTo({top:bodyheigth,behavior:'smooth'})
-            // 
         }
     }
 })()
