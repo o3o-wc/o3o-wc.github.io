@@ -1,29 +1,29 @@
 @charset "utf-8";
-    .space {
-        width: auto;
-        height: 60px;
-    }
-    .background {
-        width: 100%;
-        height: 680px;
-        background-color: darkolivegreen;
-        background: url("../web/반응형img//header2_2.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-    }
-    .background > div > h1 {
-        color: #3e295b;
-        font-size: 6vw;
-        letter-spacing: 20px;
-        float: left;
-    }
-    .background > div > h3 {
-        color: #3e295b;
-        font-size: 2vw;
-        opacity: 0.8;
-        text-align: right;
-    }
+.space {
+    width: auto;
+    height: 60px;
+}
+.background {
+    width: 100%;
+    height: 680px;
+    background-color: darkolivegreen;
+    background: url("../web/반응형img//header2_2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.background > div > h1 {
+    color: #3e295b;
+    font-size: 6vw;
+    letter-spacing: 20px;
+    float: left;
+}
+.background > div > h3 {
+    color: #3e295b;
+    font-size: 2vw;
+    opacity: 0.8;
+    text-align: right;
+}
 
 a {
     color: #707070;
@@ -43,7 +43,7 @@ a:hover {
     font-family: MoeumT R;
     /* width: 50%; */
     /* height: 50px; */
-    padding:30px;
+    padding: 30px;
     font-size: 4vw;
 }
 
@@ -60,7 +60,7 @@ a:hover {
     width: 100%;
     border-bottom: 5px solid #000;
     border-radius: 8px;
-    
+
     position: absolute;
     transition: 0.3s;
 }
@@ -276,13 +276,13 @@ a:hover {
     background-color: #a08cae;
     transition: 1s;
 }
-.icon1 > .cover > i {
-    padding: 15px 17px;
-    transition: 1s;
-}
 .icon1:hover .cover {
     background: #a08cae;
     width: 100%;
+}
+.icon1 > .cover > i {
+    padding: 15px 17px;
+    transition: 1s;
 }
 .icon1:hover i {
     color: white;
@@ -339,8 +339,6 @@ footer {
 
 /* 모바일 */
 @media all and (min-width: 320px) and (max-width: 767px) {
-
-
     .img {
         display: none;
     }
@@ -439,37 +437,37 @@ footer {
     #hpb_section > .container > .item {
         float: none;
     }
-    
+
     #head > .gnb > .main_menu {
         display: none;
-      }
-      
-      #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
+    }
+
+    #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
         display: block;
-      }
-      /* 메인메뉴 display */
-      
-      #head > .gnb > .main_menu {
+    }
+    /* 메인메뉴 display */
+
+    #head > .gnb > .main_menu {
         position: absolute;
         left: 0;
         z-index: 1;
         background-color: #fff;
         width: 100%;
-      }
-      #head > .gnb > .main_menu li {
-          text-align: left;
-      }
-      #head > .gnb > .main_menu li > a {
+    }
+    #head > .gnb > .main_menu li {
+        text-align: left;
+    }
+    #head > .gnb > .main_menu li > a {
         display: inline-block;
         padding: 10px;
         color: #000;
-        width: 100%;  
-      }
-      #head > .gnb > .main_menu li:hover a{
-          background-color: #222;
-          color: #fff;
-      }
-      #head > .gnb label[for="menu_btn"] {
+        width: 100%;
+    }
+    #head > .gnb > .main_menu li:hover a {
+        background-color: #222;
+        color: #fff;
+    }
+    #head > .gnb label[for="menu_btn"] {
         display: inline-block;
         float: right;
         margin-right: 15px;
