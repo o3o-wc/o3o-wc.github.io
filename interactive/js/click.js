@@ -15,6 +15,7 @@
         console.log("scrolled:",scrolled)
         if(target.innerText == retelm[0].innerText){
             window.scrollTo({top:bodyheigth*0,behavior:'smooth'})
+            
         }
         if(target.innerText == retelm[1].innerText){
             window.scrollTo({top:bodyheigth*0.14,behavior:'smooth'})
@@ -26,16 +27,16 @@
             window.scrollTo({top:bodyheigth*0.4,behavior:'smooth'})
         }
         if(target.innerText == retelm[4].innerText){
-            window.scrollTo({top:bodyheigth*0.52,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.50,behavior:'smooth'})
         }
         if(target.innerText == retelm[5].innerText){
-            window.scrollTo({top:bodyheigth*0.62,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.60,behavior:'smooth'})
         }
         if(target.innerText == retelm[6].innerText){
-            window.scrollTo({top:bodyheigth*0.74,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.72,behavior:'smooth'})
         }
         if(target.innerText == retelm[7].innerText){
-            window.scrollTo({top:bodyheigth*0.89,behavior:'smooth'})
+            window.scrollTo({top:bodyheigth*0.87,behavior:'smooth'})
         }
         if(target.innerText == retelm[8].innerText){
             window.scrollTo({top:bodyheigth,behavior:'smooth'})
