@@ -29,7 +29,7 @@ a:hover {
     font-family: MoeumT R;
     /* width: 50%; */
     /* height: 50px; */
-    padding:30px;
+    padding: 30px;
     font-size: 4vw;
 }
 
@@ -322,8 +322,6 @@ footer {
 
 /* 모바일 */
 @media all and (min-width: 320px) and (max-width: 767px) {
-    
-
     .img {
         display: none;
     }
@@ -355,7 +353,6 @@ footer {
     .conttext {
         display: none;
     }
-
 
     #menu {
         display: none;
@@ -416,74 +413,73 @@ footer {
     #hpb_section > .container > .item {
         float: none;
     }
-  
+
     #head > .gnb > .main_menu {
         display: none;
-      }
-      
-      #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
+    }
+
+    #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
         display: block;
-      }
-      /* 메인메뉴 display */
-      
-      #head > .gnb > .main_menu {
+    }
+    /* 메인메뉴 display */
+
+    #head > .gnb > .main_menu {
         position: absolute;
         left: 0;
         z-index: 1;
         background-color: #fff;
         width: 100%;
-      }
-      #head > .gnb > .main_menu li {
-          text-align: left;
-      }
-      #head > .gnb > .main_menu li > a {
+    }
+    #head > .gnb > .main_menu li {
+        text-align: left;
+    }
+    #head > .gnb > .main_menu li > a {
         display: inline-block;
         padding: 10px;
         color: #000;
-        width: 100%;  
-      }
-      #head > .gnb > .main_menu li:hover a{
-          background-color: #222;
-          color: #fff;
-      }
-      
+        width: 100%;
+    }
+    #head > .gnb > .main_menu li:hover a {
+        background-color: #222;
+        color: #fff;
+    }
+
     #head > .gnb > .main_menu {
         display: none;
-      }
-      
-      #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
+    }
+
+    #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
         display: block;
-      }
-      /* 메인메뉴 display */
-      
-      #head > .gnb > .main_menu {
+    }
+    /* 메인메뉴 display */
+
+    #head > .gnb > .main_menu {
         position: absolute;
         left: 0;
         z-index: 1;
         background-color: #fff;
         width: 100%;
-      }
-      #head > .gnb > .main_menu li {
-          text-align: left;
-      }
-      #head > .gnb > .main_menu li > a {
+    }
+    #head > .gnb > .main_menu li {
+        text-align: left;
+    }
+    #head > .gnb > .main_menu li > a {
         display: inline-block;
         padding: 10px;
         color: #000;
-        width: 100%;  
-      }
-      #head > .gnb > .main_menu li:hover a{
-          background-color: #222;
-          color: #fff;
-      }
-      #head > .gnb label[for="menu_btn"] {
+        width: 100%;
+    }
+    #head > .gnb > .main_menu li:hover a {
+        background-color: #222;
+        color: #fff;
+    }
+    #head > .gnb label[for="menu_btn"] {
         display: inline-block;
-       
+
         margin-right: 15px;
         z-index: 3;
     }
 }
-
 
 /* 모바일 */
 /* PC */

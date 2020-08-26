@@ -34,7 +34,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 73vw;
+    width: 80vw;
     height: 100vh;
     /* background:rgba(255,255,255,0.7); */
 }
@@ -54,53 +54,57 @@ body {
     height: 100vh;
 }
 .card_title {
-    font-size: 5rem;
-    z-index: -1;
+    width: 30%;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-#sun {
+#sun,.sun {
     transform: translateZ(900vw);
 }
-#mecury {
+#mercury,.mercury {
     transform: translateZ(800vw);
 }
-#venus {
+#venus,.venus {
     transform: translateZ(700vw);
 }
-#earth {
+#earth,.earth {
     transform: translateZ(600vw);
 }
-#mars {
+#mars,.mars {
     transform: translateZ(500vw);
 }
-#jupiter {
+#jupiter,.jupiter {
     transform: translateZ(400vw);
 }
-#saturn {
+#saturn,.saturn {
     transform: translateZ(300vw);
 }
-#uranus {
+#uranus,.uranus {
     transform: translateZ(200vw);
 }
-#neptune {
+#neptune,.neptune {
     transform: translateZ(100vw);
 }
 img {
     height: 90%;
     position: relative;
-    /* left:-350px; */
+    padding-left: 5vw;
+    top: -50px;
+    /* left:-150px; */
     z-index: -1;
 }
 #neptune {
     position: relative;
-    top: 30px;
-    /* left:-250px */
+    /* top: 30px; */
+    left: -50px;
 }
 .list {
     width: 15vw;
-    height: 100vh;
+    height: 80vh;
     position: fixed;
     right: 70px;
-    top: 0;
+    top: 40px;
     /* transform: translateZ(900vw); */
     color: #bdbdbd;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -117,7 +121,7 @@ img {
     margin-bottom: 12px;
 }
 
-li:nth-of-type(1) {
+.list > ul > li:nth-of-type(1) {
     border-left: #e24c14 1.5px solid;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
@@ -126,18 +130,24 @@ li:nth-of-type(1) {
     cursor: pointer;
 }
 
-li:nth-of-type(1) .ret {
+.list > ul > li:nth-of-type(1) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
-li:nth-of-type(1):hover .ret {
+.list > ul > li:nth-of-type(1):hover .ret {
     background: #e24c14;
     width: 100%;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
-li:nth-of-type(2) {
+.list > ul > li:nth-of-type(1)>.ret_on {
+    background: #e24c14;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.list > ul > li:nth-of-type(2) {
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
     margin: 15px;
@@ -145,18 +155,23 @@ li:nth-of-type(2) {
     cursor: pointer;
     border-left: #cfd5b8 2px solid;
 }
-li:nth-of-type(2) .ret {
+.list > ul > li:nth-of-type(2) .ret {
     width: 5%;
-    
     transition: 1s;
 }
-li:nth-of-type(2):hover .ret {
+.list > ul > li:nth-of-type(2):hover .ret {
     background: #cfd5b8;
     width: 100%;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
-li:nth-of-type(3) {
+.list > ul > li:nth-of-type(2)>.ret_on {
+    background: #cfd5b8;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.list > ul > li:nth-of-type(3) {
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
     margin: 15px;
@@ -164,18 +179,24 @@ li:nth-of-type(3) {
     cursor: pointer;
     border-left: #b06e38 2px solid;
 }
-li:nth-of-type(3) .ret {
+.list > ul > li:nth-of-type(3) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
-li:nth-of-type(3):hover .ret {
+.list > ul > li:nth-of-type(3):hover .ret {
     background: #b06e38;
     width: 100%;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
-li:nth-of-type(4) {
+.list > ul > li:nth-of-type(3)>.ret_on {
+    background: #b06e38;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.list > ul > li:nth-of-type(4) {
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
     margin: 15px;
@@ -183,18 +204,24 @@ li:nth-of-type(4) {
     cursor: pointer;
     border-left: #212751 2px solid;
 }
-li:nth-of-type(4) .ret {
+.list > ul > li:nth-of-type(4) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
-li:nth-of-type(4):hover .ret {
+.list > ul > li:nth-of-type(4):hover .ret {
     background: #212751;
     width: 100%;
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
-li:nth-of-type(5) {
+.list > ul > li:nth-of-type(4)>.ret_on {
+    background: #212751;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.list > ul > li:nth-of-type(5) {
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
     margin: 15px;
@@ -202,12 +229,18 @@ li:nth-of-type(5) {
     cursor: pointer;
     border-left: #6d4f38 2px solid;
 }
-li:nth-of-type(5) .ret {
+.list > ul > li:nth-of-type(5) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
-li:nth-of-type(5):hover .ret {
+.list > ul > li:nth-of-type(5):hover .ret {
+    background: #6d4f38;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.list > ul > li:nth-of-type(5)>.ret_on {
     background: #6d4f38;
     width: 100%;
     border-bottom-right-radius: 40%;
@@ -223,10 +256,16 @@ li:nth-of-type(6) {
 }
 li:nth-of-type(6) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
 li:nth-of-type(6):hover .ret {
+    background: #6d4833;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+li:nth-of-type(6)>.ret_on {
     background: #6d4833;
     width: 100%;
     border-bottom-right-radius: 40%;
@@ -238,14 +277,20 @@ li:nth-of-type(7) {
     margin: 15px;
     /* overflow: hidden; */
     cursor: pointer;
-    border-left: #c4a472  2px solid;
+    border-left: #c4a472 2px solid;
 }
 li:nth-of-type(7) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
 li:nth-of-type(7):hover .ret {
+    background: #c4a472;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+li:nth-of-type(7)>.ret_on {
     background: #c4a472;
     width: 100%;
     border-bottom-right-radius: 40%;
@@ -261,10 +306,16 @@ li:nth-of-type(8) {
 }
 li:nth-of-type(8) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
 li:nth-of-type(8):hover .ret {
+    background: #1689ab;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+li:nth-of-type(8)>.ret_on {
     background: #1689ab;
     width: 100%;
     border-bottom-right-radius: 40%;
@@ -281,7 +332,7 @@ li:nth-of-type(9) {
 }
 li:nth-of-type(9) .ret {
     width: 5%;
-    
+
     transition: 1s;
 }
 li:nth-of-type(9):hover .ret {
@@ -290,3 +341,48 @@ li:nth-of-type(9):hover .ret {
     border-bottom-right-radius: 40%;
     border-top-right-radius: 40%;
 }
+li:nth-of-type(9)>.ret_on {
+    background: #395afd;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.menu > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > ul > li {
+    margin: 15px;
+    padding: 0px 15px;
+    color: darkgray;
+    cursor: pointer;
+}
+.sun > h1 {
+    color: #e24c14;
+}
+.mercury > h1 {
+    color: #cfd5b8
+}
+.venus > h1 {
+    color: #b06e38
+}
+.earth > h1 {
+    color: #212751
+}
+.mars > h1 {
+    color: #6d4f38
+}
+.jupiter > h1 {
+    color: #6d4833
+}
+.saturn > h1 {
+    color: #c4a472;
+}
+.uranus > h1 {
+    color: #1689ab;
+}
+.neptune > h1 {
+    color: #395afd;
+}
+
