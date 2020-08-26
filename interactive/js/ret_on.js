@@ -9,7 +9,6 @@
         let currentScroll = window.pageYOffset;
         let scrolled = (currentScroll / bodyheigth)*100;
         scrolled = Math.floor(scrolled)
-        console.log(scrolled)
         switch(true){
             case scrolled<13:
                 for(let i=0;i<9;i++){

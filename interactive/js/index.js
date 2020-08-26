@@ -9,9 +9,6 @@
         let bodyheigth = document.body.getBoundingClientRect().height - window.innerHeight;
         let scrolled = (currentScroll / bodyheigth) * 100;
         let size = scrolled*8.2
-        // console.log(bodyheigth)
-        // console.log(scrolled)
-        // console.log(size)
         if(scrolled<1){
             boxelm[0].style.transform = 'translateZ(900vw)';
             boxelm[1].style.transform = 'translateZ(800vw)';
