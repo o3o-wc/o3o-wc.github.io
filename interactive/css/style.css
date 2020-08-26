@@ -109,7 +109,7 @@ img {
     color: #bdbdbd;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
         1px 1px 0 #000;
-    font-size: 14pt;
+    font-size: 20pt;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -385,4 +385,9 @@ li:nth-of-type(9)>.ret_on {
 .neptune > h1 {
     color: #395afd;
 }
-
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}

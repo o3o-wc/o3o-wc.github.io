@@ -10,6 +10,7 @@
         let bodyheigth = document.body.getBoundingClientRect().height - window.innerHeight;
         let currentScroll = window.pageYOffset;
         let scrolled = (currentScroll / bodyheigth)*100;
+
         if(target.innerText == retelm[0].innerText){
             window.scrollTo({top:bodyheigth*0,behavior:'smooth'})
             // 
