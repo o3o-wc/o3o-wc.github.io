@@ -179,10 +179,13 @@ a:hover {
     margin: 40px 25px;
 }
 /* IMG부분 */
+img{
+    border:0.2px solid rgba(0,0,0,0.1)
+}
 .img_section {
     width: 100%;
     height: 1240px;
-    background-color: #cecbdd;
+    /* background-color: #cecbdd; */
 }
 #imgwrap {
     display: flex;
@@ -374,7 +377,7 @@ footer {
     .img_section {
         width: 100%;
         height: 1040px;
-        background-color: #cecbdd;
+        /* background-color: #cecbdd; */
     }
 
     #hpb_section {
@@ -480,6 +483,7 @@ footer {
         z-index: 3;
     }
 }
+
 
 /* 모바일 */
 /* PC */
