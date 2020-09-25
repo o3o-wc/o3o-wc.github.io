@@ -168,11 +168,13 @@
                 // modal display block
                 modalTag.style.display="block";
                 modalTag.children[1].src=targetSrc
+                document.body.classList.add("hidden");
             });
             const closebtn = modalTag.children[0]
             console.log(closebtn)
             closebtn.addEventListener("click",function(){
                 modalTag.style.display="none";
+                document.body.classList.remove("hidden");
                 console.log(modalTag);
             })
         </script>

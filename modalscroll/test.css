@@ -1,30 +1,3 @@
-@charset "utf-8";
-.space {
-    width: auto;
-    height: 60px;
-}
-.background {
-    width: 100%;
-    height: 680px;
-    background-color: darkolivegreen;
-    background: url("../web/반응형img//header2_2.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-}
-.background > div > h1 {
-    color: #3e295b;
-    font-size: 6vw;
-    letter-spacing: 20px;
-    float: left;
-}
-.background > div > h3 {
-    color: #3e295b;
-    font-size: 2vw;
-    opacity: 0.8;
-    text-align: right;
-}
-
 a {
     color: #707070;
 }
@@ -33,6 +6,19 @@ a:visited {
 }
 a:hover {
     color: #40adf7;
+}
+.space {
+    width: auto;
+    height: 60px;
+}
+.subbackground {
+    width: 100%;
+    height: 410px;
+    background-color: darkolivegreen;
+    background: url("../web/반응형img//header2_2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 #head > .logo b {
     color: #40adf7;
@@ -53,7 +39,6 @@ a:hover {
     height: 30px;
     margin: 10px auto;
     position: relative;
-    cursor: pointer;
 }
 #head > .gnb label[for="menu_btn"] span {
     display: inline-block;
@@ -64,7 +49,7 @@ a:hover {
     position: absolute;
     transition: 0.3s;
 }
-
+/* 버튼 */
 #head
     > .gnb
     > input[id="menu_btn"]:checked
@@ -178,7 +163,6 @@ a:hover {
     background-color: darkgray;
     border-radius: 3px;
     opacity: 0.5;
-    cursor: pointer;
 }
 #hpb_section > input[name="tab"] {
     display: none;
@@ -195,10 +179,13 @@ a:hover {
     margin: 40px 25px;
 }
 /* IMG부분 */
+img{
+    border:0.2px solid rgba(0,0,0,0.1)
+}
 .img_section {
     width: 100%;
     height: 1240px;
-    background-color: #cecbdd;
+    /* background-color: #cecbdd; */
 }
 #imgwrap {
     display: flex;
@@ -267,7 +254,6 @@ a:hover {
     transition: 1s;
     overflow: hidden;
     transform: rotate(45deg);
-    cursor: pointer;
 }
 .cover {
     width: 0%;
@@ -276,13 +262,13 @@ a:hover {
     background-color: #a08cae;
     transition: 1s;
 }
-.icon1:hover .cover {
-    background: #a08cae;
-    width: 100%;
-}
 .icon1 > .cover > i {
     padding: 15px 17px;
     transition: 1s;
+}
+.icon1:hover .cover {
+    background: #a08cae;
+    width: 100%;
 }
 .icon1:hover i {
     color: white;
@@ -311,25 +297,31 @@ footer {
     top: 0;
     left: 0;
     display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .close {
     color: white;
     font-size: 50px;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 50px;
 }
 .modal-content {
     display: block;
-    width: 80%;
+    width: 100%;
+    height: 100vh;
     max-width: 600px;
     margin: 150px auto;
     animation: zoom 0.5s;
+    background-color: rgba(255, 255, 255, 0.7);
+    ;
 }
-.hidden{
+.stop-scroll{
     overflow-y: hidden;
-}
+  }
+
 @keyframes zoom {
     0% {
         transform: scale(0);
@@ -373,13 +365,6 @@ footer {
         display: none;
     }
 
-    nav {
-        height: 60px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
     #menu {
         display: none;
     }
@@ -400,7 +385,7 @@ footer {
     .img_section {
         width: 100%;
         height: 1040px;
-        background-color: #cecbdd;
+        /* background-color: #cecbdd; */
     }
 
     #hpb_section {
@@ -469,13 +454,44 @@ footer {
         background-color: #222;
         color: #fff;
     }
+
+    #head > .gnb > .main_menu {
+        display: none;
+    }
+
+    #head > .gnb > input[id="menu_btn"]:checked ~ .main_menu {
+        display: block;
+    }
+    /* 메인메뉴 display */
+
+    #head > .gnb > .main_menu {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        background-color: #fff;
+        width: 100%;
+    }
+    #head > .gnb > .main_menu li {
+        text-align: left;
+    }
+    #head > .gnb > .main_menu li > a {
+        display: inline-block;
+        padding: 10px;
+        color: #000;
+        width: 100%;
+    }
+    #head > .gnb > .main_menu li:hover a {
+        background-color: #222;
+        color: #fff;
+    }
     #head > .gnb label[for="menu_btn"] {
         display: inline-block;
-        /* float: right; */
+
         margin-right: 15px;
         z-index: 3;
     }
 }
+
 
 /* 모바일 */
 /* PC */

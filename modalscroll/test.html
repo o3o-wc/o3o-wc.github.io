@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>반응형웹_서브2</title>
+        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+        <link rel="stylesheet" type="text/css" href="test.css" />
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <script
+            src="https://kit.fontawesome.com/18daecf7d8.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="JS/jqery-3.5.1.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="head">
+                <div class="logo">
+                    <h3><b>L</b>im <b>J</b>ae<b>C</b>hang</h3>
+                </div>
+                <nav class="gnb">
+                  <input type="checkbox" id="menu_btn" />
+                  <label for="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                  <ul class="main_menu">
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="PORTFOLIO.html" style="color: #40adf7;; font-weight: bolder;">PORTFOLIO</a></li>
+                    <li><a href="CONTACT.html">CONTACT</a></li>
+                  </ul>
+                </nav>
+        </header>
+            <div class="header">
+                <div class="subbackground"></div>
+            </div>
+
+            <section class="img_section">
+                <div class="space2"></div>
+                <div class="subtitle">
+                <h2>PORTFOLIO</h2>
+                <h3>Designed by JaeChang Lim</h3>
+                </div>
+                <div id="imgwrap">
+                <div class="img1">
+                    <img src="../web/반응형img//포트폴리오1.png" width="305" height="260" title="1">
+                    <img src="../web/반응형img//포트폴리오3.jpg" width="305" height="220" title="3">
+                    <img src="../web/반응형img//포트폴리오2.png" width="305" height="260" title="2">
+                </div>
+                <div class="img2">
+                    <img src="../web/반응형img//포트폴리오4.png" width="305" height="365" title="4">
+                    <img src="../web/반응형img//포트폴리오5.png" width="305" height="150" title="5">
+                    <img src="../web/반응형img//포트폴리오6.png" width="305" height="365" title="6">
+                </div>
+                <div class="img1">
+                    <img src="../web/반응형img//포트폴리오7.png" width="305" height="260" title="7">
+                    <img src="../web/반응형img//포트폴리오8.jpg" width="305" height="220" title="8">
+                    <img src="../web/반응형img//포트폴리오9.png" width="305" height="260" title="9">
+                </div>
+                </div>
+            </section>
+                    <div class="modal">
+                        <div class="close">&times;</div>
+                        <img class="modal-content" src="반응형img/포트폴리오1.png"/>
+                    </div>
+                        </section>
+
+                        <footer>
+                <p>
+                    E-mail.dlawockd2@gmail.com<br />
+                    Copyright ⓒ 2020 by LIM JAE CHANG. All Rights Reserved
+                </p>
+            </footer>
+        </div>
+        <script>
+            const img = document.querySelector("#imgwrap")
+            const modalTag= document.querySelector(".modal")
+            console.log(img);
+            console.log(modalTag);
+            img.addEventListener("click", function (e) {
+                console.log(e.target);
+                if(this==e.target)return;
+                let targetSrc = e.target.getAttribute("src")
+                document.body.classList.add("stop-scroll");
+                // modal display block
+                modalTag.style.display="block"
+                modalTag.children[1].src=targetSrc
+            });
+
+            const closebtn = modalTag.children[0]
+            closebtn.addEventListener("click",function(){
+                modalTag.style.display="none";
+                document.body.classList.remove("stop-scroll");
+                console.log(modalTag);
+            })
+        </script>
+        <script>
+            $(function () {
+                // 제이쿼리소스
+                $(".nav>button").click(function () {
+                    $("#menu").slideToggle();
+                });
+            });
+        </script>
+    </body>
+</html>
+
+<!-- <img src="../반응형img/header2.jpg"> -->
