@@ -59,6 +59,8 @@ body {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+    opacity: 1;
+    transition: 0.3s;
 }
 #sun,.sun {
     transform: translateZ(900vw);
@@ -391,4 +393,7 @@ h1{
 }
 p{
     font-size: 2rem;
+}
+.hide{
+    opacity: 0;
 }
