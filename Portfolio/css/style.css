@@ -1,0 +1,46 @@
+body{
+    overflow-x: hidden;
+    
+}
+.wrap{
+    width: 100vw;
+    height:100vh;
+}
+.menubar{
+    width: 100vw;
+    height: 6vh;
+    background-color: sienna;
+}
+.mainimg{
+    width: 100vw;
+    height: 40vh;
+    background-color: slategray;
+}
+.slider{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.rtg{
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+}
+.intd{
+    width: 100vw;
+    height: 25vh;
+    background-color: slategray;
+}
+.sns{
+    width: 100vw;
+    height: 25vh;
+}
+.footer{
+    width: 100vw;
+    height: 7vh;
+    background-color: sienna;
+}
+/* 75 */
