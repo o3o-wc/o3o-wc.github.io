@@ -68,7 +68,7 @@ body {
 .level {
     width: 100vw;
     height: 470px;
-    background-color: cadetblue;
+    background-color:#e8e8e8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    /* color: #fff; */
     /* border: 1px solid #000000;
     border-radius: 15px;
     box-sizing: border-box;
@@ -88,7 +88,11 @@ body {
     box-shadow: black 5px 8px 5px; */
 }
 .levelwrap > h1{
+    color:#fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.levelwrap>p{
+    font-weight: bold;
 }
 .levelwrap p >span:first-child{
     float: left;
@@ -97,7 +101,10 @@ body {
     float: right;
 }
 .bar{
+    background-color: #fff;
     border: 1px solid black;
+    box-shadow: black 5px 3px 3px; 
+    margin-bottom: 15px;
 }
 .fill {
     height: 20px;
@@ -185,7 +192,7 @@ body {
 
     color: #fcef00;
     font-size: 2em;
-    z-index: 1;
+    z-index: 0;
 }
 #talkbubble {
     width: 120px;
@@ -221,13 +228,77 @@ body {
 
 /* email */
 .modal{
+    display: none;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    opacity: 0.7;
+    background-color: rgba(0,0,0,0.65);
     position: fixed;
     top: 0;
     left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.close{
+    color: #000;
+    font-size: 3.5em;
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+    /* animation: ani linear alternate infinite 5s; */
+}
+
+.modal_content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 205%;
+    max-width: 600px;
+    margin: 150px auto;
+    animation: zoom 0.5s;
+    background-color: #f2f2f2;
+    padding: 0 2%;
+}
+.modalspace{
+    width: 100%;
+    height: 55px;
+}
+.on{
+    display: block;
+}
+.hidescroll{
+    overflow-y: hidden;
+}
+.modal_content>hr{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+.modal_content>h2{
+    padding-left: 15px;
+}
+.modal_content>p{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 50px;
+}
+.modal_content>img{
+    width: 100%;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes ani {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 /* modal */
 .footer {
