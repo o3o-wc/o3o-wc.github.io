@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
         <link rel="stylesheet" type="text/css" href="../Portfolio/css/reset.css">
         <link rel="stylesheet" type="text/css" href="../Portfolio/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
     </head>
     <body>
         <div class="wrap">
@@ -15,14 +18,71 @@
             </div>
             <div class="slider">
                 <div class="left"></div>
-                <div class="rtg">1</div>
-                <div class="rtg">2</div>
-                <div class="rtg">3</div>
+                <div class="space2"></div>
+                <div class="rtg"></div>
+                <div class="space"></div>
+                <div class="rtg"></div>
+                <div class="space"></div>
+                <div class="rtg"></div>
+                <div class="space2"></div>
                 <div class="right"></div>
             </div>
-            <div class="intd">4</div>
-            <div class="sns">5</div>
+            <div class="level">
+                <div class="levelwrap">
+                    <h1>Skills</h1>
+                    <p><sapn>HTML5</sapn><span>85%</span></p>
+                    <div class="bar HTML5">
+                        <div class="fill"></div>
+                    </div>
+                    <p><sapn>CSS</sapn><span>75%</span></p>
+                    <div class="bar CSS">
+                        <div class="fill"></div>
+                    </div>
+                    <p><sapn>JavaScript</sapn><span>65%</span></p>
+                    <div class="bar JavaScript">
+                        <div class="fill"></div>
+                    </div>
+                    <p><sapn>PHP</sapn><span>65%</span></p>
+                    <div class="bar PHP">
+                        <div class="fill"></div>
+                    </div>
+                    <p><sapn>Photoshop</sapn><span>80%</span></p>
+                    <div class="bar Photoshop">
+                        <div class="fill"></div>
+                    </div>
+                    <p><sapn>Illustrator</sapn><span>70%</span></p>
+                    <div class="bar Illustrator">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="snsrtg">
+                    <i class="fab fa-facebook face"></i>
+                    <p class="facebook">FaceBook</p>
+                </div>
+                <div class="space"></div>
+                <div class="snsrtg">
+                    <div id="talkbubble">
+                        <br>
+                        <p class="kakaoicon">KAKAO</p>
+                        <p class="talk">TALK</p>
+                    </div><br>
+                    <p class="kakaotalk">KakaoTalk</p>
+                </div>
+            </div>
+            <div class="email">
+                <input type="text" class="name" placeholder="성함">
+                <input type="text" class="adress" placeholder="이메일"><br>
+                <input type="text" class="phone" placeholder="연락처"><br>
+                <textarea class="message" placeholder="메시지"></textarea>
+                <button type="submit">전송</button>
+            </div>
             <div class="footer">6</div>
+                <div class="modal">
+                    <div class="close">&times;</div>
+                </div>
         </div>
+        <script src="../Portfolio/js/script.js"></script>
     </body>
 </html>
