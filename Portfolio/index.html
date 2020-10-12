@@ -4,26 +4,65 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
-        <link rel="stylesheet" type="text/css" href="../Portfolio/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="../Portfolio/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Portfolio/css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Portfolio/css/style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap"
+        />
     </head>
     <body>
         <div class="wrap">
             <div class="header">
-                <div class="menubar">1</div>
+                <div class="menubar">
+                    <h1>Lim Jae Chang</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="mainimg">2</div>
             </div>
             <div class="slider">
                 <div class="left"></div>
                 <div class="space2"></div>
-                <div class="rtg"></div>
+                <div class="rtg">
+                    <img src="./images/반응형디자인.jpg" width="100%" alt="1">
+                </div>
                 <div class="space"></div>
-                <div class="rtg"></div>
+                <div class="rtg">
+                    <img src="./images/커피샵.jpg" width="100%" height="100%" alt="2">
+                </div>
                 <div class="space"></div>
-                <div class="rtg"></div>
+                <div class="rtg">
+                    <img src="./images/회전레이아웃-01.jpg" width="100%" height="180px" alt="3">
+                </div>
+                <div class="space"></div>
+                <div class="rtg">
+                    <img src="./images/모멘텀.png" width="100%" height="180px" alt="4">
+                </div>
+                <div class="space"></div>
+                <div class="rtg">
+                    <img src="./images/인터렉티브.jpg" width="100%" height="180px" alt="5">
+                </div>
                 <div class="space2"></div>
                 <div class="right"></div>
             </div>
@@ -64,38 +103,50 @@
                 <div class="space"></div>
                 <div class="snsrtg">
                     <div id="talkbubble">
-                        <br>
+                        <br />
                         <p class="kakaoicon">KAKAO</p>
                         <p class="talk">TALK</p>
-                    </div><br>
+                    </div>
+                    <br />
                     <p class="kakaotalk">KakaoTalk</p>
                 </div>
             </div>
             <div class="email">
-                <input type="text" class="name" placeholder="성함">
-                <input type="text" class="adress" placeholder="이메일"><br>
-                <input type="text" class="phone" placeholder="연락처"><br>
-                <textarea class="message" placeholder="메시지"></textarea>
-                <button type="submit">전송</button>
+                <form>
+                    <input type="text" class="name" placeholder="성함"/>
+                    <div class="space"></div>
+                    <input type="text" class="adress" placeholder="이메일" /><br />
+                    <input type="text" class="phone" placeholder="연락처[-생략]" /><br />
+                    <textarea class="message" placeholder="메시지" cols="80"></textarea>
+                    <p><button type="submit">전송</button></p>
+                </form>
             </div>
             <div class="footer">6</div>
-                <div class="modal">
-                    <div class="modal_content">
-                        <div class="close">&times;</div>
-                        <div class="modalspace"></div>
-                        <h2>PROJECT NAME</h2>
-                        <hr>
-                        <br>
-                        <p><i class="fas fa-caret-right"></i> Responsive Web</p>
-                        <br>
-                        <h2>DESCRIPTION</h2>
-                        <hr>
-                        <br><br>
-                        <img src="./images/mokup/Responsive Web/반응형5.png">
-                        <img src="./images/mokup//Responsive Web/Isometric-Web-Pages-Mockup.png">
-                        <img src="./images/mokup/Responsive Web/반응형3.png">
-                    </div>
+            <div class="modal">
+                <div class="modal_content">
+                    <div class="close">&times;</div>
+                    <div class="modalspace"></div>
+                    <h2>PROJECT NAME</h2>
+                    <hr />
+                    <br />
+                    <p>
+                        <i class="fas fa-caret-right"></i> Responsive Web
+                        <a href="https://o3o-wc.github.io/web/index.html" target="_blank" class="btnlink">
+                            <button class="link">VIEW</button>
+                        </a>
+                    </p>
+
+                    <br />
+                    <h2>DESCRIPTION</h2>
+                    <hr />
+                    <br /><br />
+                    <img src="./images/mokup/Responsive Web/반응형5.png" />
+                    <img
+                        src="./images/mokup//Responsive Web/Isometric-Web-Pages-Mockup.png"
+                    />
+                    <img src="./images/mokup/Responsive Web/반응형3.png" />
                 </div>
+            </div>
         </div>
         <script src="../Portfolio/js/script.js"></script>
         <script src="../Portfolio/js/mordal.js"></script>

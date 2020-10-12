@@ -1,24 +1,31 @@
-body {
-    overflow-x: hidden;
-}
 .wrap {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 .menubar {
-    width: 100vw;
+    width: 100%;
     height: 50px;
     background-color: sienna;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menubar > ul>li{
+    margin-left: 15px;
+    display:inline-block ;
+}
+.menubar > ul>li>a{
+    color: black;
 }
 /* menubar */
 .mainimg {
-    width: 100vw;
+    width: 100%;
     height: 450px;
     background-color: slategray;
 }
 /* mainimg */
 .slider {
-    width: 100vw;
+    width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
@@ -35,18 +42,7 @@ body {
     height: 180px;
     border: 1px black solid;
     cursor: pointer;
-}
-.slider > .rtg:nth-of-type(3) {
-    background-image: url("../images/반응형디자인.jpg");
-    background-size: cover;
-}
-.slider > .rtg:nth-of-type(5) {
-    background-image: url("../images/커피샵.jpg");
-    background-size: cover;
-}
-.slider > .rtg:nth-of-type(7) {
-    background-image: url("../images/회전레이아웃-01.jpg");
-    background-size: cover;
+    overflow: hidden;
 }
 .left {
     width: 0;
@@ -66,7 +62,7 @@ body {
 }
 /* slider */
 .level {
-    width: 100vw;
+    width: 100%;
     height: 470px;
     background-color:#e8e8e8;
     display: flex;
@@ -75,19 +71,15 @@ body {
     position: relative;
 }
 .levelwrap {
-    width: 55vw;
+    width: 55%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: #fff; */
-    /* border: 1px solid #000000;
-    border-radius: 15px;
-    box-sizing: border-box;
-    padding: 20px;
-    box-shadow: black 5px 8px 5px; */
+    
 }
 .levelwrap > h1{
+    font-size: 3em;
     color:#fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -145,7 +137,7 @@ body {
 }
 /* level */
 .sns {
-    width: 100vw;
+    width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
@@ -156,12 +148,16 @@ body {
     width: 220px;
     height: 180px;
     border: 1px black solid;
+    border-radius: 8px;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.sns>.space{
+    width: 5vw;
 }
 .sns > .snsrtg:nth-of-type(1) {
     background-color: #4b619a;
@@ -221,15 +217,43 @@ body {
 }
 /* sns */
 .email {
-    width: 100vw;
-    height: 350px;
-    margin: 0 auto;
+    width: 100%;
+    height: 450px;
 }
-
+.email>form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.email>form>input{
+    width: 32%;
+    height: 40px;
+}
+.email>form>input:nth-of-type(3){
+    width: 65%;
+}
+.email>form>textarea{
+    width: 65%;
+    height: 200px;
+    resize: none;
+}
+.email>form>p{
+    width: 65%;
+}
+.email>form>.space{
+    width: 1%;
+}
+.email>form>p>button{
+    width: 80px;
+    height: 40px;
+}
 /* email */
 .modal{
     display: none;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.65);
     position: fixed;
@@ -246,14 +270,20 @@ body {
     cursor: pointer;
     /* animation: ani linear alternate infinite 5s; */
 }
-
+.close:hover{
+    animation: ani linear alternate infinite 0.5s;
+}
 .modal_content {
     display: block;
     position: relative;
     width: 100%;
-    height: 205%;
+    height: 180%;
     max-width: 600px;
-    margin: 150px auto;
+    min-height: 1620px;
+    max-height: 1650px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
     animation: zoom 0.5s;
     background-color: #f2f2f2;
     padding: 0 2%;
@@ -284,6 +314,17 @@ body {
 .modal_content>img{
     width: 100%;
 }
+.link{
+    background-color:#dae0dd;
+    font-size: 0.7em;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;  
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
 @keyframes zoom {
     0% {
         transform: scale(0);
@@ -295,14 +336,19 @@ body {
 @keyframes ani {
     0% {
         transform: scale(1);
+        opacity: 1;
     }
     100% {
         transform: scale(1.5);
+        opacity: 0.5;
     }
+}
+.hide{
+    display:none;
 }
 /* modal */
 .footer {
-    width: 100vw;
+    width: 100%;
     height: 7vh;
     background-color: sienna;
 }
