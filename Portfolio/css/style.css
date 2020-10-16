@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
 .wrap {
     width: 100%;
     height: 100vh;
@@ -5,7 +9,10 @@
 .menubar {
     width: 100%;
     height: 50px;
-    background-color: sienna;
+    margin-top: -50px;
+    background-color:#7C96A6;
+    z-index: 2;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,22 +23,54 @@
 }
 .menubar > ul > li > a {
     color: black;
+    font-weight: bolder;
+}
+.menubar > ul > li > a:hover{
+    color:#114C59;
 }
 /* menubar */
 .mainimg {
     width: 100%;
-    height: 450px;
-    background-color: slategray;
+    height: 500px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
 }
+.maincover{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mainimg>img{
+    position: absolute;
+    z-index: -1;
+    animation: updown infinite 10s alternate;
+}
+@keyframes updown {
+    0%{
+        top: -60%;
+    }
+    100%{
+        top:0
+    }}
 /* mainimg */
 .slider{
-    display:flex;
-    justify-content: center;
+    text-align: center;
+}
+.slider> h1{
+    font-size: 3em;
+    height: 90px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 .slide{
-    width: 1400px;
-    height: 300px;
-    overflow: hidden;
+    width: 100vw;
+    height: 360px;
     display: flex;
     align-items: center;
     position: relative;
@@ -40,44 +79,91 @@
     width: 100%;
     height: 100%;
 }
+.slide>img:hover body{
+    background-color: #000;
+}
 .slide>ul li{
     display: inline-block;
 
 }
-.slide>ul{
-    width: 1800px;
-    height: 180px;
-    overflow: hidden;
-}
 .imgslide{
-    left: 700px;
-    height: 180px;
+    width: 100vw;
+    height: 400px;
+    overflow:hidden
 }
-.rtg {
-    width: 250px;
-    height: 180px;
-    border: 1px black solid;
-    cursor: pointer;
+.cover{
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: 1s;
+    color: #fff;
 }
-.left {
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-right: 35px solid goldenrod;
-    border-bottom: 30px solid transparent;
-    cursor: pointer;
-    margin-right: 15px;
+.cover > h2{
+    position: absolute;
+    top: -50px;
+    left: 75px;
+    transition: 1s;
 }
-.right {
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-left: 35px solid goldenrod;
-    border-bottom: 30px solid transparent;
-    cursor: pointer;
+.momentunm{
+    margin-left: 45px;
+}
+.Interactive{
+    margin-left: -25px;
+}
+.grid_text{
     margin-left: 15px;
 }
+.cafe_text{
+    margin-left: 35px;
+}
+.cover > p{
+    position: absolute;
+    left: 8%;
+    bottom: -50px;
+    transition: 1s;
+}
+.rtg {
+    width: 320px;
+    height: 280px;
+    border: 1px black solid;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.rtg:hover .cover{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+    z-index: 1;
+}
+.rtg:hover .cover>h2{
+    top:90px
+}
+.rtg:hover .cover>p{
+    bottom: 110px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    width: 320px;
+    height: 40px;
+    color:white;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(37, 49, 61);
+    transition: 0.2s;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+
 .space {
     width: 150px;
 }
@@ -88,7 +174,7 @@
 .level {
     width: 100%;
     height: 470px;
-    background-color: #e8e8e8;
+    background-color:#5E81A6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +189,7 @@
 }
 .levelwrap > h1 {
     font-size: 3em;
+    text-align: center;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -123,7 +210,7 @@
 }
 .fill {
     height: 20px;
-    background: linear-gradient(to right, #ffb3af, #ff352a);
+    background: linear-gradient(to right, #77A3D1, #91C6FF);
     padding: 2px;
     animation: level 3s;
     animation-fill-mode: both;
@@ -135,19 +222,19 @@
 
 .CSS > .fill {
     width: 75%;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 .JavaScript > .fill {
     width: 65%;
-    animation-delay: 0.8s;
+    animation-delay: 0.1s;
 }
 .PHP > .fill {
-    width: 65%;
-    animation-delay: 0.8s;
+    width: 60%;
+    animation-delay: 0.1s;
 }
 .Photoshop > .fill {
     width: 80%;
-    animation-delay: 1s;
+    animation-delay: 0.3s;
 }
 .Illustrator > .fill {
     width: 70%;
@@ -159,7 +246,7 @@
     }
 }
 /* level */
-.sns {
+/* .sns {
     width: 100%;
     height: 250px;
     display: flex;
@@ -236,11 +323,18 @@
     border-top: 10px solid transparent;
     border-right: 50px solid #47292b;
     border-bottom: 45px solid transparent;
-}
+} */
 /* sns */
 .email {
     width: 100%;
-    height: 450px;
+    height: 600px;
+    
+}
+.email > h1{
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 .email > form {
     width: 100%;
@@ -268,9 +362,10 @@
 .email > form > .space {
     width: 1%;
 }
-.email > form > p > button {
+.email > form > p > .send {
     width: 80px;
     height: 40px;
+    font-size: 1.5em;
 }
 /* email */
 .modal {
@@ -283,6 +378,7 @@
     left: 0;
     overflow-x: hidden;
     overflow-y: scroll;
+    z-index: 2;
 }
 .close {
     color: #000;
@@ -341,8 +437,7 @@
     font-size: 0.7em;
     font-weight: bolder;
     color: #fff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-        1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,1px 1px 0 #000;
     border-radius: 10px;
     width: 70px;
     height: 35px;
@@ -373,6 +468,14 @@
 .footer {
     width: 100%;
     height: 7vh;
-    background-color: sienna;
+    background-color: rgb(37, 49, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer > p{
+    color: #fff;
+    font-weight: bolder;
 }
 /* footer */
