@@ -49,11 +49,11 @@ body{
 .mainimg>img{
     position: absolute;
     z-index: -1;
-    animation: updown infinite 10s alternate;
+    animation: updown infinite 20s alternate;
 }
 @keyframes updown {
     0%{
-        top: -60%;
+        top: -55%;
     }
     100%{
         top:0

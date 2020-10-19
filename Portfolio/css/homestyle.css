@@ -1,0 +1,146 @@
+body {
+    overflow-y: hidden;
+}
+.background {
+    width: 100%;
+    height: 250vh;
+}
+.background > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: alternate infinite updown 25s;
+    z-index: -1;
+}
+.title > p{
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+.title > p:nth-of-type(1){
+    position: absolute;
+    font-size: 80px;
+    font-weight: 900;
+    color:#fff;
+    top: 40%;
+    left: 40%;
+}
+.title > p:nth-of-type(2){
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    color:#fff;
+    top: 50%;
+    left: 52%;
+}
+.backgroundcover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mecover{
+    position: absolute;
+    width: 725px;
+    height: 270px;
+    transform: skew(-45deg);
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 10px;
+
+}
+.menu{
+    position: absolute;
+    width: 700px;
+    height: 270px;
+    transform: skew(-45deg);
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 10px;
+    
+}
+.menu,.mecover{
+    right: -710px;
+}
+.menuhover{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 270px;
+    right: -150px;
+    z-index: 1;
+    /* transform: skew(-45deg); */
+    transition: 1s;
+}
+.menuhover:hover{
+    width: 10px;
+    right: 510px;
+}
+.menuhover:hover .waymenu{
+    opacity: 0;
+}
+
+.menurtg {
+    width: 100%;
+    height: 70px;
+    border-radius: 4%;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.menu li:nth-of-type(1){
+    margin-top: 15px;
+}
+.way{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    margin-left: 60px;
+    /* transform: skew(45deg); */
+}
+.waymenu{
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+}
+.way1{
+    animation: 0.9s alternate infinite wayani;
+}
+.way2{
+    animation: 1s alternate infinite wayani;
+}
+.way3{
+    animation: 1.05s alternate infinite wayani;
+}
+.waymenu > li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.menurtg >p{
+    position: absolute;
+    font-size: 40px;
+    color:#fff;
+    margin-left: 50px;
+    transform: skew(45deg);
+    transition: 1s;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+a:hover p{
+    transform: scale(1.5) skew(45deg);
+}
+@keyframes wayani{
+    0%{
+        bottom: 35px;
+    }
+    100%{
+        bottom: 85px;
+    }
+}
+@keyframes updown {
+    0% {
+        bottom: 0%;
+    }
+    100% {
+        bottom: 50%;
+    }
+}
