@@ -13,9 +13,9 @@
         if(num == 1){
             btn.setAttribute.href="https://o3o-wc.github.io/web/index.html";
             text.innerHTML="Responsive Web"
-            modalimg[0].src="./images/mokup/Responsive Web/반응형5.png"
-            modalimg[1].src="./images/mokup/Responsive Web/Isometric-Web-Pages-Mockup.png"
-            modalimg[2].src="./images/mokup/Responsive Web/반응형3.png"
+            modalimg[0].src="./images/mokup/ResponsiveWeb/반응형5.png"
+            modalimg[1].src="./images/mokup/ResponsiveWeb/Isometric-Web-Pages-Mockup.png"
+            modalimg[2].src="./images/mokup/ResponsiveWeb/반응형3.png"
         }
         if(num == 2){
             btn.href="111";
